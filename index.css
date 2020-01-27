@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background: #222;
-  color: lightgrey;
+  background: rgb(52, 0, 240);
+  color: white;
   font-size: 24px;
 }
 
@@ -20,11 +20,12 @@ body {
   margin: 16px;
   padding: 16px;
   width: 300px;
-  box-shadow: 8px 21px 24px 23px rgba(0, 0, 0, 0.27);
+  border-radius: 6px;
+  box-shadow: 4px 11px 14px 13px rgba(0, 0, 0, 0.2);
 }
 
 a {
-  color: lightgrey;
+  color: white;
 }
 
 p {
