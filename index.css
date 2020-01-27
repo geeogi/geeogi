@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background: #222;
+  color: lightgrey;
+  font-size: 24px;
+}
+
+.Flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 800px) {
+  .Flex {
+    justify-content: space-around;
+  }
+}
+
+.Card {
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 8px 21px 24px 23px rgba(0, 0, 0, 0.27);
+}
+
+a {
+  color: lightgrey;
+}
+
+p {
+  padding: 8px;
+  margin: 0;
+}
+
+img {
+  width: 272px;
+  height: 152px;
+}
+
+h1 {
+  padding: 8px;
+  margin: 0;
+}
