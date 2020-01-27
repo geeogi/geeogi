@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: rgb(52, 0, 240);
+  background: rgb(29, 29, 61);
   color: white;
   font-size: 24px;
 }
@@ -20,8 +20,6 @@ body {
   margin: 16px;
   padding: 16px;
   width: 300px;
-  border-radius: 6px;
-  box-shadow: 4px 11px 14px 13px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -36,6 +34,7 @@ p {
 img {
   width: 272px;
   height: 152px;
+  border: dashed 10px rgb(216, 216, 255);
 }
 
 h1 {
