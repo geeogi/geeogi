@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background: rgb(29, 29, 61);
-  color: white;
+  background: #fff;
+  color: #333;
   font-size: 24px;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  color: white;
+  color: #1500ff;
 }
 
 p {
@@ -34,7 +34,6 @@ p {
 img {
   width: 272px;
   height: 152px;
-  border: dashed 10px rgb(216, 216, 255);
 }
 
 h1 {
