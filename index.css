@@ -20,6 +20,7 @@ body {
   margin: 16px;
   padding: 16px;
   width: 300px;
+  background: #222;
   box-shadow: 5px 3px 14px 0px rgba(0, 0, 0, 0.27);
 }
 
