@@ -1,3 +1,8 @@
+:root {
+  --img-width: 272px;
+  --img-height: 152px;
+}
+
 body {
   margin: 0;
   background: #767;
@@ -6,22 +11,22 @@ body {
 }
 
 .Flex {
+  max-width: 1070px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1070px) {
   .Flex {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
 
 .Card {
-  margin: 16px;
+  margin: 8px;
   padding: 16px;
   width: 300px;
-  background: #222;
-  box-shadow: 5px 3px 14px 0px rgba(0, 0, 0, 0.27);
 }
 
 a {
@@ -34,11 +39,64 @@ p {
 }
 
 img {
-  width: 272px;
-  height: 152px;
+  width: var(--img-width);
+  height: var(--img-height);
 }
 
 h1 {
   padding: 8px;
   margin: 0;
+}
+
+.Browser {
+  font-size: 8px;
+  width: var(--img-width);
+  border-radius: 0.35em;
+  overflow: hidden;
+  box-shadow: 0 0.25em 0.9em -0.1em rgba(0, 0, 0, 0.3);
+}
+
+.Browser .Browser-navigation-bar {
+  box-sizing: border-box;
+  height: 2.1em;
+  padding: 0.3em;
+  background: #111;
+  border-bottom: 2px solid #222;
+}
+
+.Browser i {
+  display: inline-block;
+  height: 0.7em;
+  width: 0.7em;
+  border-radius: 40%;
+  margin: 0.4em 0.15em;
+}
+
+.Browser i:nth-child(1) {
+  background-color: rgb(255, 86, 79);
+}
+
+.Browser i:nth-child(1):hover {
+  background-color: rgb(204, 0, 3);
+}
+
+.Browser i:nth-child(2) {
+  background-color: rgb(255, 183, 42);
+}
+
+.Browser i:nth-child(2):hover {
+  background-color: rgb(218, 159, 23);
+}
+
+.Browser i:nth-child(3) {
+  background-color: rgb(37, 198, 58);
+}
+
+.Browser i:nth-child(3):hover {
+  background-color: rgb(0, 126, 0);
+}
+
+.Browser-container {
+  width: var(--img-width);
+  height: var(--img-height);
 }
