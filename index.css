@@ -33,6 +33,10 @@ a {
   color: lightgrey;
 }
 
+a:hover {
+  color: white;
+}
+
 p {
   padding: 8px;
   margin: 0;
@@ -41,6 +45,8 @@ p {
 img {
   width: var(--img-width);
   height: var(--img-height);
+  object-fit: cover;
+  object-position: 0 0;
 }
 
 h1 {
@@ -54,6 +60,10 @@ h1 {
   border-radius: 0.35em;
   overflow: hidden;
   box-shadow: 0 0.25em 0.9em -0.1em rgba(0, 0, 0, 0.3);
+}
+
+.Browser:hover {
+  box-shadow: 0 0.25em 0.9em -0.1em rgba(0, 0, 0, 0.9);
 }
 
 .Browser .Browser-navigation-bar {
