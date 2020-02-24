@@ -1,6 +1,8 @@
 :root {
   --img-width: 272px;
   --img-height: 152px;
+  --bg: white;
+  --text: black;
 }
 
 body {
@@ -8,42 +10,44 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  background: white;
-  color: black;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .Intro {
   max-width: 300px;
   font-size: 18px;
-  padding: 16px;
+  padding: 32px;
 }
 
 .Flex {
-  max-width: 1040px;
+  max-width: 800px;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 1040px) {
-  .Flex {
-    justify-content: space-evenly;
-  }
 }
 
 .Card {
-  margin: 16px;
+  margin: 0px 0px 16px 16px;
   padding: 16px;
-  width: var(--img-width);
-  font-size: 22px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+
+.Card-text {
+  margin: 0px 0px 0px 16px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 30px;
 }
 
 a {
-  color: black;
+  color: var(--text);
 }
 
 a:hover {
-  color: rgb(75, 62, 255);
+  color: rgb(145, 137, 255);
 }
 
 p {
@@ -75,8 +79,8 @@ h1 {
   box-sizing: border-box;
   height: 2.1em;
   padding: 0.3em;
-  background: #111;
-  border-bottom: 2px solid #222;
+  background: rgb(20, 19, 36);
+  border-bottom: 2px solid rgb(45, 43, 80);
 }
 
 .Browser i {
@@ -114,4 +118,22 @@ h1 {
 .Browser-container {
   width: var(--img-width);
   height: var(--img-height);
+}
+
+@media only screen and (min-width: 600px) {
+  .Image {
+    min-width: var(--img-width);
+  }
+  .Browser {
+    min-width: var(--img-width);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Card {
+    flex-wrap: wrap;
+  }
+  .Card-text {
+    margin: 16px 0px 0px 0px;
+  }
 }
