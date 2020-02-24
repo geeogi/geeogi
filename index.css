@@ -26,7 +26,7 @@ body {
 }
 
 .Card {
-  margin: 0px 0px 16px 16px;
+  margin: 0px 16px 16px 16px;
   padding: 16px;
   display: flex;
   background-color: rgba(0, 0, 0, 0.04);
