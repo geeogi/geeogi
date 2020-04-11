@@ -37,6 +37,10 @@ body {
   margin: 0px 0px 0px 16px;
 }
 
+.Card-text p {
+  padding: 8px 0;
+}
+
 h3 {
   margin: 0;
   font-size: 30px;
